@@ -1,0 +1,328 @@
+/********************  Global CSS ********************/
+
+
+body{
+    background: #fff;
+}
+.container{
+    max-width: 1300px;
+}
+@font-face {
+    font-family: ubuntu-light;
+    src: url("../fonts/Ubuntu-Light.ttf");
+}
+@font-face {
+    font-family: ubuntu-bold;
+    src: url("../fonts/Ubuntu-Bold.ttf");
+}
+@font-face {
+    font-family: HelveticaNeue-Light;
+    src: url("../fonts/HelveticaNeueLight.ttf");
+}
+@font-face {
+    font-family: ubuntu-regular;
+    src: url("../fonts/Ubuntu-Regular.ttf");
+}
+.btn-create-wallet{
+    background-color: rgb(252,194,3);
+    border-radius: 40px;
+    font-family: ubuntu-bold;
+    color: rgb(131,94,0);
+    font-size: 24px;
+    padding: 15px 35px;
+}
+.pt-200{
+    padding-top: 200px;
+}
+.pb-100{
+    padding-bottom: 100px;
+}
+.clr{
+    clear: both;
+}
+.bg-gray{
+    background-color: rgb(245,247,250);
+}
+/********************  Custom CSS  ********************/
+
+/***********  Home landing page  ***********/
+
+.header-main{
+    padding: 15px 0;
+    background: #fff;
+    -webkit-box-shadow: 0px 2px 16px 0px rgba(50, 50, 50, 0.2);
+    -moz-box-shadow:    0px 2px 16px 0px rgba(50, 50, 50, 0.2);
+    box-shadow:         0px 2px 16px 0px rgba(50, 50, 50, 0.2);
+    font-family: ubuntu-light;
+    z-index: 2;
+}
+.header-main .container{
+    display: flex;
+    justify-content: space-between;
+}
+.header-main .header-right {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+.header-main .header-right ul{
+    margin-bottom: 0;
+    margin-right: 30px;
+}
+.header-main .header-right ul li{
+    float: left;
+    padding: 0 25px;
+}
+.header-main .header-right ul li a{
+    color: rgb(54,62,77);
+}
+.header-main .header-right .btn-signin{
+    border-radius: 8px;
+    border: solid 1px rgb(170,177,189);
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: 18px;
+}
+
+.fluid-content{
+    z-index: 1;
+    width: 100%;
+    height: 866px;
+    background-color: rgb(245,247,250);
+    background-image: url("../images/mainImg.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    position: relative;
+}
+.fluid-content .left-content{
+    color: rgb(170,177,189);
+    position: absolute;
+    top: 30%;
+    max-width: 550px;
+}
+.fluid-content .left-content h1{
+    color: rgb(54,62,77);
+}
+.fluid-content .left-content p{
+    font-family: HelveticaNeue-Light;
+    font-size: 21px;
+    margin-bottom: 30px;
+}
+.bottom-fluid{
+    font-family: ubuntu-light;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    top: 810px;
+    z-index: 99;
+}
+.bottom-fluid .row{
+    width: 830px;
+    border: solid 1px rgb(223,227,235);
+    border-radius: 50px;
+    background: #fff;
+    padding: 50px 0;
+}
+.bottom-fluid .col-4-item{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bottom-fluid .col-4-item:first-child a img{
+    margin-bottom: 12px;
+}
+.bottom-fluid .col-4-item a{
+    flex-direction: column;
+    text-align: center;
+    font-size: 18px;
+    color: rgb(47,100,209);
+}
+.bottom-fluid .col-4-item a img{
+    margin-bottom: 30px;
+}
+
+.col-2-content{
+    margin-bottom: 100px;
+    position: relative;
+}
+.col-2-content .title-content{
+    font-size: 36px;
+    color: rgb(242,178,0);
+    font-family: ubuntu-regular;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+.col-2-content ul {
+    color: rgb(114,125,143);
+    font-family: HelveticaNeue-Light;
+}
+.col-2-content ul li{
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.col-2-content ul li:before {
+    content: '';
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    background-image: url("../images/check.png");
+    background-size: cover;
+    background-position: center;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.col-2-content p{
+    color: rgb(114,125,143);
+    font-family: HelveticaNeue-Light;
+    font-size: 20px;
+}
+
+.col-2-content .box-4-item{
+    width: 270px;
+    height: 130px;
+    border-radius: 20px;
+    border: solid 1px rgb(223,227,235);
+    font-family: HelveticaNeue-Light;
+    font-size: 16px;
+    float: left;
+    color: rgb(114,125,143);
+    margin-right: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.col-2-content .box-4-item img{
+    width: 70px;
+    margin: 0 15px;
+}
+.col-2-content .btn-bottom-wrap{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    bottom: -133px;
+}
+
+footer.footer-main{
+    background-color: rgb(54,62,77);
+    padding: 100px 0;
+}
+
+footer .col-foot {
+    color: rgb(114,125,143);
+}
+
+footer .col-foot h2{
+    font-size: 30px;
+    color: rgb(114,125,143);
+}
+footer .social-icon{
+    margin: 30px 0;
+    overflow: auto;
+}
+footer .social-icon li{
+    float: left;
+    margin-right: 20px;
+}
+footer .title-footer{
+    font-size: 21px;
+    color: rgb(170,177,189)
+}
+footer .col-foot a {
+    color: rgb(114,125,143);
+}
+footer .col-foot .list-link li{
+    margin: 10px 0;
+}
+
+/***********  Register page  ***********/
+
+.register header{
+    background: none;
+    box-shadow: none;
+}
+.register .dropdown-language{
+    font-family: HelveticaNeue-Light;
+}
+.register .dropdown-language #btn-dropdown{
+    border-radius: 10px;
+    background-color: rgb(114,125,143);
+    display: flex;
+    align-items: center;
+    padding: 5px 15px;
+}
+.register .dropdown-language #btn-dropdown img{
+    margin-right: 7px;
+}
+
+.wrap-form{
+    width: 695px;
+    min-height: 375px;
+    border: solid 1px rgb(223,227,235);
+    border-radius: 10px;
+    background-color: #fff;
+    margin-top: 80px;
+    background-image: url("../images/bg-register.png");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: 60%;
+    -webkit-box-shadow: 0px 0px 16px 0px rgba(54, 62, 77, 0.1);
+    -moz-box-shadow:    0px 0px 16px 0px rgba(54, 62, 77, 0.1);
+    box-shadow:         0px 0px 16px 0px rgba(54, 62, 77, 0.1);
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 75px;
+    font-family: HelveticaNeue-Light;
+    color: rgb(114,125,143);
+}
+.wrap-form .col-item{
+    padding-left: 0;
+    padding-right: 0;
+}
+.wrap-form .big-title{
+    color: rgb(242,178,0);
+    font-family: ubuntu-light;
+    font-size: 28px;
+    line-height: 1.2;
+    margin-bottom: 12px;
+}
+.wrap-form .btn-signin{
+    border-radius: 8px;
+    border: solid 1px rgb(170,177,189);
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-bottom: 10px;
+}
+.wrap-form .or{
+    margin: 7px 0;
+}
+.wrap-form .col-item .list-register{
+    padding-left: 15px;
+    border-left: solid 1px rgb(237,240,245);
+}
+.wrap-form .col-item .list-register li{
+    margin-bottom: 10px;
+}
+.wrap-form .col-item .list-register li a{
+    font-size: 18px;
+    text-decoration: none;
+}
+.wrap-form .col-item .list-register li img{
+    width: 50px;
+    margin-right: 15px;
+}
+
+/********************  Responsive ********************/
+
+/********* Register **********/
+
+@media (min-width: 1285px){
+
+}
