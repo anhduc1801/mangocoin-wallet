@@ -281,6 +281,7 @@ footer .col-foot .list-link li{
     padding: 50px 75px;
     font-family: HelveticaNeue-Light;
     color: rgb(114,125,143);
+    position: relative;
 }
 .wrap-form .col-item{
     padding-left: 0;
@@ -318,6 +319,50 @@ footer .col-foot .list-link li{
     width: 50px;
     margin-right: 15px;
 }
+
+/********* Register email **********/
+
+.wrap-form-step{
+    padding-top: 20px;
+    display: flex;
+    padding-bottom: 100px;
+    flex-direction: column;
+    align-items: center;
+}
+.wrap-form-step .btn-back{
+    position: absolute;
+    left: 50px;
+}
+.wrap-form-step .headline{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.wrap-form-step .form-group{
+    width: 70%;
+    margin: 30px 0;
+}
+.wrap-form-step .form-group .form-line label{
+    font-size: 11px;
+    color: rgb(114,125,143);
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+.wrap-form-step .form-group .form-line .form-item{
+    position: relative;
+}
+.wrap-form-step .form-group .form-line .form-item input{
+    height: 44px;
+    border-radius: 10px;
+    padding-left: 50px;
+}
+.wrap-form-step .form-group .form-line .form-item img{
+    position: absolute;
+    left: 13px;
+    width: 25px;
+    top: 10px;
+}
+
 
 /********************  Responsive ********************/
 
