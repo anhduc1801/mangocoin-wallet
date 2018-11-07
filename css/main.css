@@ -23,6 +23,10 @@ body{
     font-family: ubuntu-regular;
     src: url("../fonts/Ubuntu-Regular.ttf");
 }
+@font-face {
+    font-family: HelveticaNeue-Bold;
+    src: url("../fonts/HELR65W.ttf");
+}
 .btn-create-wallet{
     background-color: rgb(252,194,3);
     border-radius: 40px;
@@ -419,14 +423,71 @@ footer .col-foot .list-link li{
     font-size: 14px;
 }
 
-#login-mobile .modal-dialog{
-    max-width: 620px;
+#login-mobile{
+    font-family: HelveticaNeue-Light;
+    top: 100px;
 }
 
+#login-mobile .modal-dialog{
+    max-width: 720px;
+}
+#login-mobile .modal-dialog .modal-body{
+    padding: 30px;
+}
+#login-mobile .description{
+    color: rgb(114,125,143);
+    margin: 10px 0;
+}
 #login-mobile h1{
     font-family: ubuntu-light;
     color: rgb(242,178,0);
     font-size: 28px;
+}
+#login-mobile .qr-content{
+    display: flex;
+    margin-top: 30px;
+}
+#login-mobile .qr-content .qrcode img{
+    width: 240px;
+}
+#login-mobile .qr-content .qrstep{
+    padding-left: 50px;
+}
+#login-mobile .qr-content .qrstep .step-signin{
+    color: rgb(28,78,230);
+    font-family: HelveticaNeue-Bold;
+    font-size: 20px;
+}
+#login-mobile .qr-content .qrstep ul li{
+    display: flex;
+    margin-bottom: 15px;
+}
+#login-mobile .qr-content .qrstep ul li .step-signin{
+    display: block;
+    margin-right: 15px;
+}
+#login-mobile .footer-download{
+    background-color: rgb(237,240,245);
+    border-radius: 10px;
+    display: flex;
+    padding: 30px;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+#login-mobile .footer-download .download-app a img{
+    width: 128px;
+}
+#login-mobile .footer-download .title{
+    font-size: 20px;
+}
+#login-mobile .footer-download .title span{
+    font-family: HelveticaNeue-Bold;
+}
+#login-mobile .btn-close{
+    position: absolute;
+    right: 15px;
+    top: 10px;
 }
 
 /********************  Responsive ********************/
