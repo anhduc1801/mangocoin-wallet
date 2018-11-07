@@ -42,7 +42,14 @@ body{
 }
 .bg-gray{
     background-color: rgb(245,247,250);
+    min-height: 100vh;
 }
+.form-control:focus{
+    box-shadow: none;
+    border: solid 1px rgb(242,178,0);
+    transition: ease 0.3s;
+}
+
 /********************  Custom CSS  ********************/
 
 /***********  Home landing page  ***********/
@@ -242,7 +249,7 @@ footer .col-foot .list-link li{
     margin: 10px 0;
 }
 
-/***********  Register page  ***********/
+/***********  Register, Sign In page  ***********/
 
 .register header{
     background: none;
@@ -319,8 +326,6 @@ footer .col-foot .list-link li{
     width: 50px;
     margin-right: 15px;
 }
-
-/********* Register email **********/
 
 .wrap-form-step{
     padding-top: 20px;
@@ -401,10 +406,60 @@ footer .col-foot .list-link li{
     border-radius: 0 10px 10px 0;
     padding-left: 15px;
 }
+.wrap-form-step .forgot-password{
+    margin-top: 7px;
+}
+.wrap-form-step .forgot-password img{
+    margin-right: 7px;
+    width: 27px;
+}
+.wrap-form-step .forgot-password a{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+#login-mobile .modal-dialog{
+    max-width: 620px;
+}
+
+#login-mobile h1{
+    font-family: ubuntu-light;
+    color: rgb(242,178,0);
+    font-size: 28px;
+}
+
 /********************  Responsive ********************/
 
 /********* Register **********/
 
-@media (min-width: 1285px){
+@media (max-width: 768px){
+    .wrap-form{
+        padding-left: 15px;
+        padding-right: 15px;
+        display: block;
+    }
+    .wrap-form .col-item .list-register{
+        border-left: none;
+        padding-left: 0;
+    }
+    .wrap-form-step{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .wrap-form-step .headline{
+        justify-content: flex-start;
+    }
+    .wrap-form-step .btn-back {
+        position: relative;
+        margin-right: 10px;
+        left: 0;
+    }
+    .wrap-form-step .form-group {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px){
 
 }
