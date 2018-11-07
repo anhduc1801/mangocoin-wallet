@@ -28,12 +28,16 @@ body{
     src: url("../fonts/HELR65W.ttf");
 }
 .btn-create-wallet{
-    background-color: rgb(252,194,3);
+    background-image: linear-gradient(to right, rgb(252,194,3), rgb(255,221,0));
     border-radius: 40px;
     font-family: ubuntu-bold;
     color: rgb(131,94,0);
     font-size: 24px;
-    padding: 15px 35px;
+    padding: 19px 40px;
+}
+.btn-create-wallet:focus{
+    background: rgb(242,178,0);
+    transition: ease 0.3s;
 }
 .pt-200{
     padding-top: 200px;
@@ -53,7 +57,9 @@ body{
     border: solid 1px rgb(242,178,0);
     transition: ease 0.3s;
 }
-
+.btn:focus {
+    box-shadow: none;
+}
 /********************  Custom CSS  ********************/
 
 /***********  Home landing page  ***********/
@@ -94,7 +100,28 @@ body{
     padding-bottom: 3px;
     font-size: 18px;
 }
-
+.header-main .header-right .btn-signin:focus{
+    background-color: rgb(237,240,245);
+}
+.header-respon{
+    display: none;
+}
+.slicknav_menu{
+    background-color: rgb(54,62,77);
+    padding: 0;
+    display: none;
+}
+.slicknav_btn{
+    font-size: 19px;
+    background-color: transparent;
+}
+.slicknav_nav{
+    background-color: #fff;
+}
+.slicknav_nav a{
+    color: rgb(54,62,77);
+    margin: 0;
+}
 .fluid-content{
     z-index: 1;
     width: 100%;
@@ -111,13 +138,15 @@ body{
     top: 30%;
     max-width: 550px;
 }
-.fluid-content .left-content h1{
-    color: rgb(54,62,77);
+.fluid-content .left-content img{
+    width: 268px;
+    margin-bottom: 12px;
 }
 .fluid-content .left-content p{
     font-family: HelveticaNeue-Light;
     font-size: 21px;
     margin-bottom: 30px;
+    color: rgb(114,125,143);
 }
 .bottom-fluid{
     font-family: ubuntu-light;
@@ -191,6 +220,7 @@ body{
     color: rgb(114,125,143);
     font-family: HelveticaNeue-Light;
     font-size: 20px;
+    letter-spacing: 0.5px;
 }
 
 .col-2-content .box-4-item{
@@ -230,9 +260,8 @@ footer .col-foot {
     color: rgb(114,125,143);
 }
 
-footer .col-foot h2{
-    font-size: 30px;
-    color: rgb(114,125,143);
+footer .col-foot .logo-footer{
+    width: 187px;
 }
 footer .social-icon{
     margin: 30px 0;
@@ -492,6 +521,32 @@ footer .col-foot .list-link li{
 
 /********************  Responsive ********************/
 
+/********* Landing page **********/
+@media (max-width: 576px) {
+    .bottom-fluid .col-4-item{
+        margin-bottom: 50px;
+    }
+    .col-2-content:first-child{
+        padding-top: 570px;
+    }
+    .right-content img{
+        width: 100%;
+    }
+    .col-2-content .box-4-item{
+        width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .bottom-fluid .row{
+        width: 100%;
+    }
+    .header-main{
+        display: none;
+    }
+    .slicknav_menu{
+        display: block;
+    }
+}
 /********* Register **********/
 
 @media (max-width: 768px){
